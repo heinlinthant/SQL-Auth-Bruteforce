@@ -11,7 +11,7 @@ if (!file_exists($playloads_file)) {
 }
 
 
-$data = file($passwords_file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+$data = file($playloads_file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
 $initial_response = send_form("hello", "hello", $url, $username_field, $password_field);
 
